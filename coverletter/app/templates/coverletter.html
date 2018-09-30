@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+<ul>
+    <li>Jake Carter</li>
+    <li>400 Fatherland St. APT 17</li>
+    <li>Nashville, 37206</li>
+    <li>jacobraycarter@gmail.com</li>
+</ul>
+{% now "jS F Y" %}
+
+
+<p>{{ info.PersonName }},</p>
+
+<p>
+    My name is Jake Carter and I am applying a devloper postion at {{ info.CompanyName }}.  As a graduate of the Nashville Software School (Javascript, React, Python and Django), I look at this being the first step into my software development career. I currently hold a Secret Security Clearance and a TS/SCI as of January 2018.
+</p> 
+
+<p>
+    I recently left the military after six successful years to pursue a career as a software developer.  As an Intelligence Analyst in the military I learned great oral and written skills as well as the art of presentation. During my time in the military I had to give multiple classified country briefs to senior staff that helped in the decision making process. The military also taught me to adapt and overcome, be precise and diligent during the first attempt of a task, being very comfortable with the unknowing, and the importance of teamwork.
+
+</p>  
+
+<p>
+    At Nashville Software School they not only taught us two different languages and frameworks, but taught us the skill needed to learn a new language quickly. I am very confident that if a problem arises in a language that I do not have experience in I could quickly figure out a solution. 
+</p>
+
+<p>
+    I feel that I would bring great team characteristics to {{ info.CompanyName }}. I look forward to discussing my candidacy for this position. Thank you for your time and thoughtful consideration. I hope to hear back from you soon. 
+</p>
+
+<ul>
+    <li>Sincerely,</li>
+    <li>Jake Carter</li>
+</ul>
+
+Enclosure: Resume 
+
+    
+</body>
+</html>
